@@ -1,0 +1,16 @@
+.l-contents {
+	height: 100%;
+	display: flex;
+	&__left {
+		width: 80%;
+	}
+
+	&__right {
+		width: 20%;
+		background-color: #F2EDE9;
+	}
+}
+
+.l-sidebar {
+	padding-left: 46px;
+	}

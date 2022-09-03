@@ -1,0 +1,55 @@
+@use '../../Foundation/variable' as v;
+
+.p-map {
+	position: relative;
+	width: 100%;
+	height: 650px;
+	background-size: cover;
+	background-color: #000000;
+
+	img {
+		object-fit: cover;
+		opacity: 0.6;
+		height: 650px;
+	}
+
+	.p-map_layer {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: #000000;
+		opacity: 0.29;
+		width: 62%;
+		height: 100%;
+	}
+
+	.p-map_tittle {
+		position: absolute;
+		top: 0;
+		padding: 90px 0 0 119px;
+	}
+
+	h3 {
+		color: v.$pt-color;
+		font-size: 36px;
+		font-weight: 700;
+	}
+
+	&::after {
+		content: "";
+		width: 75px;
+		height: 2px;
+		background-color: v.$pt-color;
+		position: absolute;
+		top: 189px;
+		left: 119px;
+	}
+
+	p {
+		position: relative;
+		top:120px;
+		color:v.$pt-color;
+		line-height: 2;
+		font-size: 1rem;
+	}
+}

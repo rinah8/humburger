@@ -1,0 +1,20 @@
+// breakpoint 
+$breakpoint: (
+	sp:'0px',
+	tb:'600px',
+	pc:'1025px',
+);
+
+@mixin mq ($bp) {
+	@media (max-width: map-get($breakpoint, $bp)) {
+		@content;
+	}
+}
+
+// フォント
+$font :'Roboto',
+'sans-serif';
+
+// トップバックグラウンドカラー
+$bgtop-color: #FFF7EF;
+$pt-color: #fff;

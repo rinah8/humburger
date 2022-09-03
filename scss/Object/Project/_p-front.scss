@@ -1,0 +1,51 @@
+@use "../../Foundation/variable" as v;
+
+.p-front {
+	img {
+		height: 530px;
+		background: no-repeat;
+		background-size: cover;
+		display: block;
+	}
+}
+
+.p-front {
+	p {
+		font-size: 40px;
+		font-weight: 700;
+		color: v.$pt-color;
+		position: absolute;
+		left: 86px;
+		top: 448px;
+	}
+}
+
+
+.p-front_middle {
+	display: flex;
+
+	.p-front_section {
+		position: relative;
+		height: 1200px;
+		width: 50%;
+		background-size: cover;
+		margin: 120px 134px;
+	}
+	img {
+		height: 1196px;
+	}
+	.takeout {
+		margin-right: 40px;
+		margin-left: 111px;
+	}
+	.eatin {
+		margin-left: 40px;
+		margin-right: 111px;
+	}
+}
+
+
+.p-box {
+	position: absolute;
+	bottom: 0px;
+}

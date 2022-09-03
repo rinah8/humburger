@@ -1,0 +1,42 @@
+@use "../../Foundation/variable" as v;
+
+
+.c-title-main.c-title-menu {
+	font-family: v.$font;
+}
+
+.c-title-main {
+	font-weight: bold;
+	font-size: 4rem;
+	margin-left: 3rem;
+}
+
+.c-title-menu {
+	display: block;
+	font-size: 34px;
+	font-weight: 600;
+	font-family: v.$font;
+	padding: 82px 523px 85px 0;
+}
+
+
+.c-front_tittle {
+	h2 {
+		position: absolute;
+		color: v.$pt-color;
+		font-size: 60px;
+		font-weight: 600;
+		top: 20px;
+		left: 19px;
+	}
+
+	&::after {
+		position: absolute;
+		top: 130px;
+		left: 26px;
+		content: "";
+		width: 63px;
+		height: 4px;
+		background-color: v.$pt-color;
+	}
+}
