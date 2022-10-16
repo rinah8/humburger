@@ -11,7 +11,7 @@
 
 .p-front {
 	p {
-		font-size: 40px;
+		font-size: 2.5rem;
 		font-weight: 700;
 		color: v.$pt-color;
 		position: absolute;
@@ -23,26 +23,33 @@
 
 .p-front_middle {
 	display: flex;
+}
 
-	.p-front_section {
-		position: relative;
-		height: 1200px;
-		width: 50%;
-		background-size: cover;
-		margin: 120px 134px;
-	}
-	img {
-		height: 1196px;
-	}
-	.takeout {
-		margin-right: 40px;
-		margin-left: 111px;
-	}
-	.eatin {
-		margin-left: 40px;
-		margin-right: 111px;
+.p-front_section {
+	position: relative;
+	height: 1200px;
+	width: 50%;
+	background-size: cover;
+	margin: 120px 0 134px 0;
+	@include v.mq(tb) {
+		margin: 40px 0 40px 0;
 	}
 }
+
+img {
+	height: 1196px;
+}
+
+.takeout {
+	margin-right: 2%;
+	margin-left: 7%;
+}
+
+.eatin {
+	margin-left: 2%;
+	margin-right: 7%;
+}
+
 
 
 .p-box {

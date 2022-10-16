@@ -1,8 +1,7 @@
 // breakpoint 
 $breakpoint: (
-	sp:'0px',
-	tb:'600px',
-	pc:'1025px',
+	sp:'600px',
+	tb:'1024px',
 );
 
 @mixin mq ($bp) {

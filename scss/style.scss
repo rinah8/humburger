@@ -3,10 +3,11 @@
 @use './Foundation/variable';
 @use './Layout/l-footer';
 @use './Layout/l-header';
-@use'./Layout/l-sidebar';
+@use './Layout/l-sidebar';
 @use './Object/Component/c-box';
 @use './Object/Component/c-button';
 @use './Object/Component/c-title';
+@use './Object/Project/p_header';
 @use './Object/Project/p-access';
 @use './Object/Project/p-button';
 @use './Object/Project/p-front';

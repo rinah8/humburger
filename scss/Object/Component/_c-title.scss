@@ -9,14 +9,24 @@
 	font-weight: bold;
 	font-size: 4rem;
 	margin-left: 3rem;
+	@include v.mq(tb){
+		margin: 0;
+		font-size: 2.5rem;
+	}
 }
 
+.c-tittle_sidebar {
+	// padding: 82px 523px 85px 0;
+	padding: 5.625rem 14.0625rem 14.0625rem 0;
+}
 .c-title-menu {
 	display: block;
-	font-size: 34px;
+	font-size: 2.125rem;
 	font-weight: 600;
 	font-family: v.$font;
-	padding: 82px 523px 85px 0;
+	@include v.mq(tb){
+		display: none;
+	}
 }
 
 
@@ -24,10 +34,13 @@
 	h2 {
 		position: absolute;
 		color: v.$pt-color;
-		font-size: 60px;
+		font-size: 3.75rem;
 		font-weight: 600;
 		top: 20px;
 		left: 19px;
+		@include v.mq(tb){
+			left: 11px;
+		}
 	}
 
 	&::after {
@@ -38,5 +51,11 @@
 		width: 63px;
 		height: 4px;
 		background-color: v.$pt-color;
+		@include v.mq(tb){
+			position: absolute;
+			top:91.6px;
+			left:15.1px;
+			width: 35.94px;
+		}
 	}
 }

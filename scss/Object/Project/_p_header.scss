@@ -1,0 +1,12 @@
+@use '../../Foundation/variable' as v;
+
+.p-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	@include v.mq (tb) {
+		flex-direction: column;
+		justify-content: space-around;
+	}
+}

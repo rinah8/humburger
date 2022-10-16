@@ -1,16 +1,53 @@
+@use '../Foundation/variable' as v;
+
 .l-contents {
 	height: 100%;
 	display: flex;
+
 	&__left {
 		width: 80%;
+
+		@include v.mq(tb) {
+			width: 100%;
+		}
 	}
 
+	//サイドメニュー 
 	&__right {
 		width: 20%;
 		background-color: #F2EDE9;
+
+		@include v.mq(tb) {
+			display: none;
+		}
 	}
 }
 
 .l-sidebar {
-	padding-left: 46px;
+	padding-left: 2.875rem;
+}
+
+
+// オープンクラス付与
+
+.l-contents__right.open {
+	@include v.mq(tb) {
+		display: block;
+		transition: right .5s;
+		z-index: 200;
 	}
+}
+
+.l-contents__left.open {
+	&::after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 82.5%;
+		height: 367%;
+		background-color: rgba(0, 0, 0, 0.5);
+		z-index: 500;
+	}
+}

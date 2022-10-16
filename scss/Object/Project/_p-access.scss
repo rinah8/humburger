@@ -6,13 +6,17 @@
 	height: 650px;
 	background-size: cover;
 	background-color: #000000;
-
-	img {
-		object-fit: cover;
-		opacity: 0.6;
-		height: 650px;
+	@include v.mq(tb){
+		height: 415px;
 	}
 
+	img {
+		opacity: 0.6;
+		height: 650px;
+		@include v.mq(tb){
+			height: 415px;
+		}
+	}	
 	.p-map_layer {
 		position: absolute;
 		top: 0;
@@ -21,18 +25,27 @@
 		opacity: 0.29;
 		width: 62%;
 		height: 100%;
+		@include v.mq(tb){
+			width: 100%;
+		}
 	}
 
 	.p-map_tittle {
 		position: absolute;
 		top: 0;
 		padding: 90px 0 0 119px;
-	}
-
+		@include v.mq(tb){
+			padding: 2.5rem 0 0 2.625rem;
+		}
+	}	
 	h3 {
 		color: v.$pt-color;
-		font-size: 36px;
+		font-size: 2.25rem;
 		font-weight: 700;
+		@include v.mq(tb){
+			font-size: 1.875rem;
+			font-weight: bold;
+		}
 	}
 
 	&::after {
@@ -43,6 +56,10 @@
 		position: absolute;
 		top: 189px;
 		left: 119px;
+		@include v.mq(tb){
+			top: 6.375rem;
+			left: 2.65625rem;
+		}
 	}
 
 	p {
@@ -51,5 +68,11 @@
 		color:v.$pt-color;
 		line-height: 2;
 		font-size: 1rem;
+		@include v.mq(tb){
+			font-size: 0.875rem;
+			line-height: 2.35;
+			top: 5rem;
+			margin-right: 1.8125rem;
+		}
 	}
 }
